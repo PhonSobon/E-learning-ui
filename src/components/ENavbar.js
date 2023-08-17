@@ -31,19 +31,6 @@ export default function NavbarWithDropdown() {
                 <EHandleThemeMode/>
                 <div className={"flex items-center gap-2 btn-auth"}>
                     {(() => {
-                        // if (session){
-                        //     return (
-                        //         <Button
-                        //             pill
-                        //             onClick={handleDashboard}
-                        //         >
-                        //        <span className={"lg:px-3 uppercase flex gap-2"}>
-                        //            <AiFillDashboard className={"h-5 w-5 lg:mr-2"} />
-                        //             <span className={"hidden lg:inline"}>Dashboard</span>
-                        //         </span>
-                        //         </Button>
-                        //     )
-                        // }
                         return (
                             <>
                                 <Button pill
@@ -71,30 +58,31 @@ export default function NavbarWithDropdown() {
             <Navbar.Collapse>
                 <Navbar.Link
                     // active={pathname.includes("feature")}
-                    href="/feature"
-                    as={Link}
+                    href="#"
+                    // as={Link}
                 >
-                    Feature
+                    All Courses
                 </Navbar.Link>
                 <Navbar.Link
                     // active={pathname.includes("report")}
-                    href="/report" as={Link}>
-                    Report
+                    href="#"
+                >
+                    About Us
                 </Navbar.Link>
                 <Navbar.Link
                     // active={pathname.includes("vote")}
-                    href="/votes" as={Link}>
-                    Vote
+                    href="#">
+                    Instructors
                 </Navbar.Link>
                 <Navbar.Link
                     // active={pathname.includes("feedback")}
-                    href="/feedback" as={Link}>
+                    href="#">
                     Feedback
                 </Navbar.Link>
                 <Navbar.Link
                     // active={pathname.includes("about-us")}
-                    href="/about-us" as={Link}>
-                    About Us
+                    href="#">
+                    Contact
                 </Navbar.Link>
             </Navbar.Collapse>
         </Navbar>
